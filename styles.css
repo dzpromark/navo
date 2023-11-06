@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#navi{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    height: 100vh;
+    width: 90%;
+    background-color:#222831;
+    transition: all 0.5s ease;
+    display: block;
+
+}
+
+#menu-toggle {
+position: absolute;
+right: -60px;
+width: 60px;
+bottom: 450px;
+height: 100px;
+display: block;
+z-index: 9999;
+padding: 0;
+border-radius: 0 10px 10px 0;
+text-indent: -9999px;
+background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50% / 25px 25px no-repeat;
+border: 2px solid;
+}
+#menu-toggle:hover {
+border: 2px solid ;
+color: #fff;
+}
+.menu ul li > label {
+background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50% / 16px 16px no-repeat;
+}
+
+.menu ul li a,
+.menu ul li label {
+display: block;
+text-align: center;
+padding: 0 20px;
+line-height: 60px;
+text-decoration: none;
+color: #000;
+}
+
+.menu ul li a:hover,
+.menu ul li label:hover {
+color: #666;
+}
+
+#fornav{
+    height: 80%;
+    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* column-gap: 20px; */
+}
+#fornavchild{
+    height: 100%;
+    width: 100%;
+}
+#navi.active {
+    transform: translateX(0);
+    transition: all 0.5s ease;
+    z-index: 9999;
+}
+
+#headercontainers{
+    height: 130px;
+    width: 100%;
+    background-color: aqua;
+}
+#headerchild{
+    height: 100%;
+    width: 100%;
+    display:  flex;
+    align-items: center;
+    /* justify-content:space-around ; */
+}
+#sumslogocontainer{
+    height: 100px;
+    width: 100px;
+    padding-left: 50px;
+    
+}
+#sumbotlogo{
+    width: 100%;
+    height: 100%;
+}
+#sumbotcontainer{
+    height: 100%;
+    width: 100%;
+}
+#summarizationscontainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#summarizationform {
+    width: 700px;
+    height: 600px;
+    background-color: #323643;
+    border-radius: 10px;
+     display: block; 
+     justify-content: center;
+    align-items: center; 
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);  
+    /* margin-left: 50px; */
+    }
+    #textarea{
+        width: 100%;
+        height: 80%;
+        resize: none;
+        font-size: 1rem;
+        color: white;
+        background-color: #606470;
+        }
+ #sumbtn{
+        height: 40px;
+        width: 100px;
+        border-radius: 8px;
+        border-color: white;
+        position: relative;
+        
+        padding: 5px;
+        margin-top: 10px;
+        
+}
+#sumbtn:hover{
+    background-color: #455d7a;
+    color: white;
+    }
+
+
+#sumdiv{
+    width: 700px;
+    height: 600px;
+    background-color: #323643;
+    border-radius: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
+    
+}
+    #childsumdiv{
+        height: 100%;
+    width: 100%;
+    color: white;
+    overflow-y: auto;
+    }
+    #navFooter{
+        height: 10%;
+        width: 100%;
+    }
+    #navFooterContainer{
+        width: 100%;
+        color: #fff;
+        text-align: center;
+    }
+
+    #formfooter{
+        padding-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #formfootercontainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    @media only screen and (max-width: 700px) {
+        #navi{
+            height: 100vh;
+            width: 90%;
+            background-color:purple;
+            transition: all 0.5s ease;
+            display: block;
+           }
+        #menu-toggle {
+            position: absolute;
+            right: -60px;
+            width: 60px;
+            bottom: 230px;
+            height: 100px;
+            display: block;
+            padding: 0;
+            border-radius: 0 10px 10px 0;
+            text-indent: -9999px;
+            background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50% / 25px 25px no-repeat;
+            border: 2px solid;
+        }
+        #headercontainers{
+                height: 80px;
+                width: 100%;
+                background-color: aqua;
+        }
+        #sumslogocontainer{
+            height: 60px;
+            width: 70px;
+            padding-left: 50px;
+            
+        }
+        #summarizationform {
+            width: 100%;
+            height: 300px;
+            background-color: #323643;
+            border-radius: 10px;
+             display: block; 
+             justify-content: center;
+            align-items: center; 
+            box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);  
+            /* margin-left: 50px; */
+        }
+        #textarea{
+            width: 100%;
+            height: 80%;
+            resize: none;
+            font-size: 1rem;
+            color: white;
+            background-color: #606470;
+     }
+    #sumdiv{
+        width: 100%;
+        height: 400px;
+        background-color: #323643;
+        border-radius: 10px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        /* box-shadow: 3px 3px 3px 0px rgb(0, 0, 0); */
+        
+    }
+    #summarizationscontainer{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    #sumbotcontainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+    
+      @media only screen and (min-width: 768px) {
+        #navi{
+            height: 100vh;
+            width: 90%;
+            background-color:blue;
+            transition: all 0.5s ease;
+            display: block;
+           }
+        #menu-toggle {
+            position: absolute;
+            right: -60px;
+            width: 60px;
+            bottom: 390px;
+            height: 100px;
+            display: block;
+            padding: 0;
+            border-radius: 0 10px 10px 0;
+            text-indent: -9999px;
+            background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50% / 25px 25px no-repeat;
+            border: 2px solid;
+        }
+        #headercontainers{
+                height: 90px;
+                width: 100%;
+                background-color: aqua;
+        }
+        #sumslogocontainer{
+                height: 70px;
+                width: 70px;
+                padding-left: 50px;
+                
+        }
+        #summarizationform {
+                width: 500px;
+                height: 450px;
+                background-color: #323643;
+                border-radius: 10px;
+                 display: block; 
+                 justify-content: center;
+                align-items: center; 
+                box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);  
+                /* margin-left: 50px; */
+        }
+        #textarea{
+                    width: 100%;
+                    height: 80%;
+                    resize: none;
+                    font-size: 1rem;
+                    color: white;
+                    background-color: #606470;
+             }
+        #sumdiv{
+                width: 450px;
+                height: 450px;
+                background-color: #323643;
+                border-radius: 10px;
+                display: block;
+                justify-content: center;
+                align-items: center;
+                /* box-shadow: 3px 3px 3px 0px rgb(0, 0, 0); */
+                
+        }
+            #childsumdiv{
+                    height: 100%;
+                width: 100%;
+                color: white;
+                overflow-y: auto;
+            }
+            #sumbotcontainer{
+                height: 95%;
+                width: 100%;
+                display: flex;
+            }
+            #formfooter{
+                padding-top: 10px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+      }
+      
+
+@media only screen and (min-width: 992px) {
+    #navi{
+     height: 100vh;
+     width: 90%;
+     background-color:red;
+     transition: all 0.5s ease;
+     display: block;
+    }
+    #menu-toggle {
+     position: absolute;
+     right: -60px;
+     width: 60px;
+     bottom: 430px;
+     height: 100px;
+     display: block;
+     padding: 0;
+     border-radius: 0 10px 10px 0;
+     text-indent: -9999px;
+     background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50% / 25px 25px no-repeat;
+     border: 2px solid;
+     }
+     #headercontainers{
+         height: 100px;
+         width: 100%;
+         background-color: aqua;
+     }
+     #sumslogocontainer{
+         height: 70px;
+         width: 70px;
+         padding-left: 50px;
+         
+     }
+     #summarizationform {
+         width: 600px;
+         height: 500px;
+         background-color: #323643;
+         border-radius: 10px;
+          display: block; 
+          justify-content: center;
+         align-items: center; 
+         box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);  
+         /* margin-left: 50px; */
+         }
+     #textarea{
+             width: 100%;
+             height: 80%;
+             resize: none;
+             font-size: 1rem;
+             color: white;
+             background-color: #606470;
+      }
+      #sumdiv{
+         width: 600px;
+         height: 500px;
+         background-color: #323643;
+         border-radius: 10px;
+         display: block;
+         justify-content: center;
+         align-items: center;
+         box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
+         
+     }
+     #childsumdiv{
+             height: 100%;
+         width: 100%;
+         color: white;
+         overflow-y: auto;
+     }
+     #sumbotcontainer{
+         height: 95%;
+         width: 100%;
+     }
+     #formfooter{
+         padding-top: 10px;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+   }
+
+@media only screen and (min-width: 1300px) {
+    #navi{
+        height: 100vh;
+        width: 90%;
+        background-color:#222831;
+        transition: all 0.5s ease;
+        display: block;
+    
+    }
+    #menu-toggle {
+        position: absolute;
+        right: -60px;
+        width: 60px;
+        bottom: 470px;
+        height: 100px;
+        display: block;
+        padding: 0;
+        border-radius: 0 10px 10px 0;
+        text-indent: -9999px;
+        background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50% / 25px 25px no-repeat;
+        border: 2px solid;
+    }
+    #headercontainers{
+        height: 100px;
+        width: 100%;
+        background-color: aquamarine;
+    }
+    #sumslogocontainer{
+        height: 70px;
+        width: 70px;
+        padding-left: 50px;
+        
+    }
+    #summarizationform {
+        width: 700px;
+        height: 600px;
+        background-color: #323643;
+        border-radius: 10px;
+         display: block; 
+         justify-content: center;
+        align-items: center; 
+        box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);  
+        /* margin-left: 50px; */
+        }
+    #textarea{
+            width: 100%;
+            height: 80%;
+            resize: none;
+            font-size: 1rem;
+            color: white;
+            background-color: #606470;
+     }
+     #sumdiv{
+        width: 700px;
+        height: 600px;
+        background-color: #323643;
+        border-radius: 10px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 3px 3px 3px 3px rgb(0, 0, 0);
+        
+    }
+    #childsumdiv{
+        height: 100%;
+        width: 100%;
+        color: white;
+        overflow-y: auto;
+    }
+}
+
